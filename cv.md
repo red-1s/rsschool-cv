@@ -1,6 +1,6 @@
 # Denis Murlatovskiy
 
-## Contacs
+## Contacts
 
 * **Telegram:** [red_1s](https://t.me/red_1s)
 * **Email:** [yarkay.rabota@gmail.com](mailto:yarkay.rabota@gmail.com)
