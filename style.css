@@ -18,7 +18,7 @@ body {
     box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
     background: #fff;
 }
-.container .left_Part {
+.container .left__part {
     position: relative;
     padding: 20px;
     background: #24627f;
@@ -119,7 +119,7 @@ body {
     font-weight: 200;
     margin-top: 10px;
 }
-.container .right_Part {
+.container .right__part {
     position: relative;
     background: white;
 }
