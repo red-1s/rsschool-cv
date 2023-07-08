@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV&num;3&period; CV&period; Cross&macr;Check</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/xcode.min.css">
 <script src="js/highlight.min.js"></script>
@@ -37,7 +37,6 @@
                     <li>
                         <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
                         <span class="text">Moscow</span>
-                        </a>
                     </li>
                 </ul> 
             </div>
@@ -66,15 +65,15 @@
                 <ul>
                     <li>
                         <span class="text">Russian</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 100%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">English</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 66%;"></div>
-                        </span>
+                        </div>
                     </li>
                 </ul> 
             </div>
@@ -83,45 +82,45 @@
                 <ul>
                     <li>
                         <span class="text">Swift, Objective-c</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 80%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">Xcode</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 85%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">UIKit, CocoaPods</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 75%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">UI Testing</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 100%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">MVC, MVVM</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 100%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">Git FLow</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 100%;"></div>
-                        </span>
+                        </div>
                     </li>
                     <li>
                         <span class="text">REST API</span>
-                        <span class="percent">
+                        <div class="percent">
                             <div style="width: 100%;"></div>
-                        </span>
+                        </div>
                     </li>
                 </ul> 
             </div>
@@ -183,11 +182,13 @@
                     </div>
                     <div class="worker">
                         <h4>Junior iOS developer</h4>
-                        <li>Development and support of corporate ERP systems;</li>
-                        <li>Project support in Jira, Confluence;</li>
-                        <li>Preparation of documentation;</li>
-                        <li>Interaction with analysts, backend, frontend developers, testers;</li>
-                        <li>Publishing applications and monitoring failures.</li>
+                        <ul>
+                            <li>Development and support of corporate ERP systems;</li>
+                            <li>Project support in Jira, Confluence;</li>
+                            <li>Preparation of documentation;</li>
+                            <li>Interaction with analysts, backend, frontend developers, testers;</li>
+                            <li>Publishing applications and monitoring failures.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="company">
@@ -197,15 +198,17 @@
                     </div>
                     <div class="worker">
                         <h4>Junior iOS developer</h4>
-                        <li>Development and support of a social network;</li>
-                        <li>Layout and writing of business logic;</li>
-                        <li>Working with someone else's code - refactoring;</li>
-                        <li>Tracking bugs and fixing them;</li>
-                        <li>Working with Git, managing tasks in Trello, communication in Slack.</li>
+                        <ul>
+                            <li>Development and support of a social network;</li>
+                            <li>Layout and writing of business logic;</li>
+                            <li>Working with someone else's code - refactoring;</li>
+                            <li>Tracking bugs and fixing them;</li>
+                            <li>Working with Git, managing tasks in Trello, communication in Slack.</li>
+                        </ul>
                     </div>
                 </div>
                 <h2 class="title__right">Code Examples</h2>
-                <section class="code-example" id="code">
+                <div class="code-example" id="code">
                     <pre class="pre">
                         <code class="code">
 private func truncateNames(_ text: String?, width: CGFloat) -> String {
@@ -238,7 +241,7 @@ private func widthForView(text: String) -> CGFloat {
 }
                         </code>
                     </pre>
-                </section>
+                </div>
             </div>
         </div>
     </div>
