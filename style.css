@@ -1,6 +1,3 @@
-:root {
-    --white-color: #fff;
-}
 body {
     background-color: powderblue;
     display: flex;
@@ -21,8 +18,8 @@ body {
 }
 .container .left_Part {
     position: relative;
-    padding: 40px;
-    background: #003147;
+    padding: 20px;
+    background: #24627f;
 }
 .profile {
     position: relative;
@@ -48,7 +45,7 @@ body {
     object-fit: cover;
 }
 .profile h2 {
-    color: var(--white-color);
+    color: white;
     font-size: 1.5em;
     margin-top: 20px;
     text-align: center;
@@ -59,10 +56,44 @@ body {
     font-size: 0.9em;
     font-weight: 200;
 }
+.contacts {
+    padding-top: 20px;
+    color: white;
+}
+.contacts__title {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contacts ul {
+    position: relative;
+    padding-left: 10px;
+}
+
+.contacts ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.contacts ul li .icon {
+    display: inline-block;
+    width: 25px;
+    font-size: 19px;
+    color: cadetblue;
+}
+
+.contacts ul li span {
+    font-weight: 300;
+}
+
 .container .right_Part {
     position: relative;
-    background: var(--white-color);
-    padding: 40px;
+    background: white;
 }
 h1 {
     color: yellow;
