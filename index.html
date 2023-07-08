@@ -4,7 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV&num;3&period; CV&period; Cross&macr;Check</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/xcode.min.css">
+<script src="js/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </head>
 <body>
 	<div class="container">
@@ -207,7 +210,41 @@
                         <li>Working with Git, managing tasks in Trello, communication in Slack.</li>
                     </div>
                 </div>
+                <h2 class="title__right">Code Examples</h2>
+                <section class="code-example" id="code">
+                    <pre class="pre">
+                        <code class="code">
+private func truncateNames(_ text: String?, width: CGFloat) -> String {
+    let namesLabelHorizontalPaddings: CGFloat = 56
+    guard var text = text, width >= namesLabelHorizontalPaddings else { return "" }
+    let separator = ","
+    var names = text.components(separatedBy: separator)
+    text = names.joined(separator: separator)
+    if widthForView(text: text) > (width - namesLabelHorizontalPaddings) {
+        names.removeLast()
+        return truncateNames(names.joined(separator: separator), width: width)
+    }
+    return text
+}
 
+private func widthForView(text: String) -> CGFloat {
+    let font = UIFont.systemFont(ofSize: 12)
+    let namesLabelHeight: CGFloat = 16
+    let label = UILabel(frame: CGRect(
+                                    x: 0,
+                                    y: 0,
+                                    width: CGFloat.greatestFiniteMagnitude,
+                                    height: namesLabelHeight))
+    label.numberOfLines = 1
+    label.lineBreakMode = NSLineBreakMode.byWordWrapping
+    label.font = font
+    label.text = text
+    label.sizeToFit()
+    return label.frame.width
+}
+                        </code>
+                    </pre>
+                </section>
             </div>
         </div>
     </div>
