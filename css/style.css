@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100&display=swap');
+
+body {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Dosis', sans-serif;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+    background: white;
+}
+.container .left__part {
+    position: relative;
+    padding: 20px;
+    background: #24627f;
+    min-width: 300px;
+}
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.profile .image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.profile .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.profile h1 {
+    color: white;
+    font-size: 1.7em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+}
+.profile h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 200;
+    margin-top: 5px;
+}
+.contacts {
+    padding-top: 20px;
+    color: white;
+}
+.title__left {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contacts ul {
+    position: relative;
+    padding-left: 10px;
+}
+
+.contacts ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.contacts ul li .icon {
+    display: inline-block;
+    width: 25px;
+    font-size: 19px;
+    color: cadetblue;
+}
+
+.contacts ul li span {
+    font-weight: 300;
+}
+
+.education ul {
+    padding-left: 10px;
+}
+
+.education li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.education h4 {
+    color: cadetblue;
+    font-weight: 500;
+}
+
+.education li h3:nth-child(2) {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education li h3 {
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.progress .text {
+    color: white;
+    font-weight: 100;
+}
+.progress ul {
+    padding-left: 10px;
+}
+
+.progress li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.progress .percent {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: #002130;
+    display: block;
+    margin-top: 5px;
+}
+.progress .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: cadetblue;
+}
+
+.about__me {
+    margin-bottom: 50px;
+}
+
+.about__me:last-child {
+    margin-bottom: 0;
+}
+
+.container .right__part {
+    position: relative;
+    background: white;
+    padding: 40px;
+    min-width: 580px;
+}
+
+.title__right {
+    color: #24627f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+p {
+    color: #555
+}
+
+.about__me .company {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about__me .company .years {
+    min-width: 140px;
+}
+
+.about__me .company .years h5 {
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 600;
+}
+.about__me .company  h4 {
+    text-transform: uppercase;
+    color: cadetblue;
+}
+
+.about__me ul {
+    padding-left: 17px;
+    color: #555;
+}
+
+.pre {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.code {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 600px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .code {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__me .company {
+        flex-direction: column;
+    }
+    .about__me .company .years {
+        max-width: 150px;
+        margin-bottom: 5px;
+    }
+}
