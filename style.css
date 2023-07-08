@@ -65,7 +65,7 @@ body {
     padding-top: 20px;
     color: white;
 }
-.title {
+.title__left {
     color: white;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -147,7 +147,27 @@ body {
     background: cadetblue;
 }
 
+.about__me {
+    margin-bottom: 50px;
+}
+
+.about__me:last-child {
+    margin-bottom: 0;
+}
+
+.title__right {
+    color: #24627f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+p {
+    color: #555
+}
+
 .container .right__part {
     position: relative;
     background: white;
+    padding: 40px;
 }
