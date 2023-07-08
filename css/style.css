@@ -209,4 +209,25 @@ p {
 .code {
     margin-top: 0px;
     margin-bottom: 0px;
+    max-width: 600px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .code {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__me .company {
+        flex-direction: column;
+    }
+    .about__me .company .years {
+        max-width: 150px;
+        margin-bottom: 5px;
+    }
 }
