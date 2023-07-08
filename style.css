@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100&display=swap');
+
 body {
     background-color: powderblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Times New Roman;
+    font-family: 'Dosis', sans-serif;
 }
 .container {
     position: relative;
@@ -46,7 +48,7 @@ body {
 }
 .profile h2 {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-top: 20px;
     text-align: center;
     font-weight: 500;
@@ -60,7 +62,8 @@ body {
     padding-top: 20px;
     color: white;
 }
-.contacts__title {
+.title {
+    color: white;
     margin-bottom: 10px;
     margin-left: 10px;
     text-transform: uppercase;
@@ -91,6 +94,31 @@ body {
     font-weight: 300;
 }
 
+.education ul {
+    padding-left: 10px;
+}
+
+.education li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.education h4 {
+    color: cadetblue;
+    font-weight: 500;
+}
+
+.education li h3:nth-child(2) {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education li h3 {
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
+}
 .container .right_Part {
     position: relative;
     background: white;
